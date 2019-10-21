@@ -18,10 +18,12 @@ body {
 }
 
 .about {
+  width: 100%;
   min-height: 300px;
   background-image: url('./images/in_action_front.png');
   background-size: 100%;
   background-position-y: center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,6 +36,11 @@ body {
   align-items: center;
   width: 100%;
   text-align: center;
+  
+  background-image: url('./images/racetrack.png');
+  background-size: 100%;
+  background-position-y: center;
+  background-attachment: fixed;
 }
 
 .members img {
@@ -46,27 +53,26 @@ body {
   flex-grow: 1;
 }
 
-#container:nth-child(odd) {
-  background: #db133c;
-  width: 100%;
-}
-
-#container section:nth-child(even) {
-  color: #db133c;
-  background-color: white;
-  width: 100%;
-}
-
 .next_events {
-  background-image: url('./images/racetrack.png');
-  background-size: 100%;
-  background-position-y: center;
   min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #db133c;
 }
 .next_events ul {
   list-style-type: none;
-  color: white;
+}
+
+.slogan {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  color: #db133c;
+}
+
+.slogan em {
+  color: black;
+  font-style: normal;
+  font-weight: bolder;
 }
